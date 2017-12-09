@@ -12,5 +12,8 @@
 @interface BussinessDetailViewController : UIViewController
 
 @property (strong,nonatomic) BusinessModel *businessModel;
+@property (weak, nonatomic) IBOutlet UIImageView *payImageView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *payImageViewTopConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *payImageHeightConstraint;
 
 @end

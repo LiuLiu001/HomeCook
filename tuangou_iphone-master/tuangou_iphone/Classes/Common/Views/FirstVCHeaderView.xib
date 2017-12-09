@@ -16,27 +16,27 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Saa-WP-fwB" userLabel="View 1">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="90"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eo0-BR-Pj4" userLabel="Cover View">
-                            <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="90"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SS7-Wl-mKO">
-                                    <rect key="frame" x="10" y="25" width="254" height="48"/>
+                                    <rect key="frame" x="10" y="8" width="254" height="48"/>
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                     <state key="normal" title="咱们东北人今晚吃点啥">
                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
                                 </button>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_head" translatesAutoresizingMaskIntoConstraints="NO" id="FlN-mm-cbE">
-                                    <rect key="frame" x="530" y="19.5" width="60" height="60"/>
+                                    <rect key="frame" x="530" y="2.5" width="60" height="60"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="60" id="aII-S6-qrs"/>
                                         <constraint firstAttribute="height" constant="60" id="vTH-wm-WtV"/>
                                     </constraints>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="家乡菜精选 &gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9HD-em-GVq">
-                                    <rect key="frame" x="10" y="75.5" width="84.5" height="17"/>
+                                    <rect key="frame" x="10" y="57" width="84.5" height="17"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
@@ -47,8 +47,8 @@
                                 <constraint firstItem="SS7-Wl-mKO" firstAttribute="leading" secondItem="Eo0-BR-Pj4" secondAttribute="leading" constant="10" id="Df5-MY-ffN"/>
                                 <constraint firstAttribute="trailing" secondItem="FlN-mm-cbE" secondAttribute="trailing" constant="10" id="FHr-k0-BSf"/>
                                 <constraint firstItem="FlN-mm-cbE" firstAttribute="centerY" secondItem="SS7-Wl-mKO" secondAttribute="centerY" id="HpG-86-2aE"/>
-                                <constraint firstItem="9HD-em-GVq" firstAttribute="top" secondItem="SS7-Wl-mKO" secondAttribute="bottom" constant="2.5" id="NWp-5g-OIU"/>
-                                <constraint firstItem="SS7-Wl-mKO" firstAttribute="top" secondItem="Eo0-BR-Pj4" secondAttribute="top" constant="25" id="RdW-13-QMp"/>
+                                <constraint firstItem="9HD-em-GVq" firstAttribute="top" secondItem="SS7-Wl-mKO" secondAttribute="bottom" constant="1" id="NWp-5g-OIU"/>
+                                <constraint firstItem="SS7-Wl-mKO" firstAttribute="top" secondItem="Eo0-BR-Pj4" secondAttribute="top" constant="8" id="RdW-13-QMp"/>
                                 <constraint firstItem="9HD-em-GVq" firstAttribute="leading" secondItem="SS7-Wl-mKO" secondAttribute="leading" id="TSK-Md-HXt"/>
                                 <constraint firstItem="FlN-mm-cbE" firstAttribute="top" secondItem="SS7-Wl-mKO" secondAttribute="bottom" constant="-53.5" id="XlC-hZ-IFB"/>
                             </constraints>
@@ -56,7 +56,7 @@
                     </subviews>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="150" id="0me-kt-qUq"/>
+                        <constraint firstAttribute="height" constant="90" id="0me-kt-qUq"/>
                         <constraint firstItem="Eo0-BR-Pj4" firstAttribute="leading" secondItem="Saa-WP-fwB" secondAttribute="leading" id="ObE-wT-GC0"/>
                         <constraint firstItem="Eo0-BR-Pj4" firstAttribute="top" secondItem="Saa-WP-fwB" secondAttribute="top" id="cjI-Qu-Lgp"/>
                         <constraint firstAttribute="trailing" secondItem="Eo0-BR-Pj4" secondAttribute="trailing" id="lUp-rC-AcO"/>
@@ -64,7 +64,7 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aKb-wA-aop" userLabel="View 2">
-                    <rect key="frame" x="10" y="140" width="580" height="1"/>
+                    <rect key="frame" x="10" y="80" width="580" height="1"/>
                     <color key="backgroundColor" red="0.86274509799999999" green="0.87058823529999996" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="1" id="PNC-8b-BJI"/>

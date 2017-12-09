@@ -836,17 +836,31 @@
                                     <action selector="backButtonAction:" destination="tsJ-bj-Zul" eventType="touchUpInside" id="qYW-iK-7Hp"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic_pay1" translatesAutoresizingMaskIntoConstraints="NO" id="y1S-2P-SkQ">
+                                <rect key="frame" x="0.0" y="667" width="375" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="3ss-Wk-cRw"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="LIz-ON-ebv" firstAttribute="leading" secondItem="KQd-kU-aeM" secondAttribute="leading" id="0Ic-Tf-3AR"/>
                             <constraint firstItem="WJv-1F-YYs" firstAttribute="top" secondItem="Yu9-BK-g7X" secondAttribute="bottom" constant="15" id="RUH-oS-Om2"/>
                             <constraint firstItem="LIz-ON-ebv" firstAttribute="top" secondItem="KQd-kU-aeM" secondAttribute="top" constant="-60" id="W8l-p7-Ae4"/>
+                            <constraint firstAttribute="bottom" secondItem="y1S-2P-SkQ" secondAttribute="top" id="W9E-6K-iQ8"/>
                             <constraint firstItem="P59-o6-WZp" firstAttribute="top" secondItem="LIz-ON-ebv" secondAttribute="bottom" id="eQu-gM-ST8"/>
+                            <constraint firstItem="y1S-2P-SkQ" firstAttribute="leading" secondItem="KQd-kU-aeM" secondAttribute="leading" id="fpt-DD-bc8"/>
+                            <constraint firstAttribute="trailing" secondItem="y1S-2P-SkQ" secondAttribute="trailing" id="glY-by-Jc3"/>
                             <constraint firstItem="WJv-1F-YYs" firstAttribute="leading" secondItem="KQd-kU-aeM" secondAttribute="leading" id="t3r-yt-NqJ"/>
                             <constraint firstAttribute="trailing" secondItem="LIz-ON-ebv" secondAttribute="trailing" id="w6Q-LT-1P2"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="payImageHeightConstraint" destination="3ss-Wk-cRw" id="655-KR-SZx"/>
+                        <outlet property="payImageView" destination="y1S-2P-SkQ" id="la5-Rp-8aj"/>
+                        <outlet property="payImageViewTopConstraint" destination="W9E-6K-iQ8" id="SK5-82-yD6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P6o-14-CoW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2687,7 +2701,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.11328900460000001" green="0.80052477899999996" blue="0.61150763539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.86274509799999999" green="0.30196078430000001" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="ucp-6H-IFh" firstAttribute="leading" secondItem="v0y-LD-Z2a" secondAttribute="leading" constant="8" id="2zm-Iz-oBO"/>
                                     <constraint firstItem="x7z-Lg-Dmd" firstAttribute="top" secondItem="v0y-LD-Z2a" secondAttribute="top" constant="30" id="KWT-Oy-Gvg"/>
@@ -2883,6 +2897,7 @@
         <image name="icon_map_refresh" width="70" height="70"/>
         <image name="icon_search" width="30" height="30"/>
         <image name="pic_food_detail" width="414" height="736"/>
+        <image name="pic_pay1" width="414" height="74"/>
         <image name="pic_user_center" width="414" height="664"/>
         <image name="touxiang" width="755" height="800"/>
         <image name="unionpay" width="512" height="512"/>

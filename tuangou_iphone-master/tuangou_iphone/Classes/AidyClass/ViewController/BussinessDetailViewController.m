@@ -19,6 +19,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    UITapGestureRecognizer * tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showPayInfo)];
+    self.payImageView.userInteractionEnabled = YES;
+    [self.payImageView addGestureRecognizer:tapGesture];
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -34,13 +37,29 @@
 - (IBAction)backAction:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
 }
+
+- (void)showPayInfo{
+    
+    [UIView animateWithDuration:0.1 animations:^{
+        self.payImageView.image = [UIImage imageNamed:@"pic_pay2"];
+        self.payImageHeightConstraint.constant = 260;
+    } completion:^(BOOL finished) {
+        [UIView animateWithDuration:0.25 animations:^{
+            
+            self.payImageViewTopConstraint.constant = self.payImageView.frame.size.height;
+            [self.view layoutIfNeeded];
+        }];
+    }];
+    
+    
+}
 #pragma mark - TableView
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 2;
+    return 3;
 }
 
 
@@ -48,7 +67,9 @@
     if (indexPath.row == 0) {
         return 280;
     }
-    
+    else if (indexPath.row == 1){
+        return 90;
+    }
     else{
         return 626;
     }
@@ -63,6 +84,11 @@
         cell.samallImageView.image = [UIImage imageNamed:self.businessModel.businessMainImage];
         cell.addressLabel.text = self.businessModel.businessAddress;
         cell.homeTownLabel.text = self.businessModel.businessHomeTown;
+        return cell;
+    }
+    else if (indexPath.row == 1){
+        FinderTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FinderTableViewCell" forIndexPath:indexPath];
+        cell.finderImage.image = [UIImage imageNamed:@"pic_banner2"];
         return cell;
     }
     else{
@@ -88,6 +114,15 @@
 //        businessCell.selectionStyle = UITableViewCellSelectionStyleNone;
 //        return businessCell;
 //    }
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row == 2) {
+        [UIView animateWithDuration:0.25 animations:^{
+            self.payImageViewTopConstraint.constant = self.payImageView.frame.size.height;
+            [self.view layoutIfNeeded];
+        }];
+    }
 }
 /*
 #pragma mark - Navigation
