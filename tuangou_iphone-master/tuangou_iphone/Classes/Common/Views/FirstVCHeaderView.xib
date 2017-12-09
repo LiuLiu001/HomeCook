@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="FirstVCHeaderView" id="iN0-l3-epB" customClass="FirstVCHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="151"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Saa-WP-fwB" userLabel="View 1">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eo0-BR-Pj4" userLabel="Cover View">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SS7-Wl-mKO">
+                                    <rect key="frame" x="10" y="25" width="254" height="48"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                    <state key="normal" title="咱们东北人今晚吃点啥">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                </button>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_head" translatesAutoresizingMaskIntoConstraints="NO" id="FlN-mm-cbE">
+                                    <rect key="frame" x="530" y="19.5" width="60" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="60" id="aII-S6-qrs"/>
+                                        <constraint firstAttribute="height" constant="60" id="vTH-wm-WtV"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="家乡菜精选 &gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9HD-em-GVq">
+                                    <rect key="frame" x="10" y="75.5" width="84.5" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="SS7-Wl-mKO" firstAttribute="leading" secondItem="Eo0-BR-Pj4" secondAttribute="leading" constant="10" id="Df5-MY-ffN"/>
+                                <constraint firstAttribute="trailing" secondItem="FlN-mm-cbE" secondAttribute="trailing" constant="10" id="FHr-k0-BSf"/>
+                                <constraint firstItem="FlN-mm-cbE" firstAttribute="centerY" secondItem="SS7-Wl-mKO" secondAttribute="centerY" id="HpG-86-2aE"/>
+                                <constraint firstItem="9HD-em-GVq" firstAttribute="top" secondItem="SS7-Wl-mKO" secondAttribute="bottom" constant="2.5" id="NWp-5g-OIU"/>
+                                <constraint firstItem="SS7-Wl-mKO" firstAttribute="top" secondItem="Eo0-BR-Pj4" secondAttribute="top" constant="25" id="RdW-13-QMp"/>
+                                <constraint firstItem="9HD-em-GVq" firstAttribute="leading" secondItem="SS7-Wl-mKO" secondAttribute="leading" id="TSK-Md-HXt"/>
+                                <constraint firstItem="FlN-mm-cbE" firstAttribute="top" secondItem="SS7-Wl-mKO" secondAttribute="bottom" constant="-53.5" id="XlC-hZ-IFB"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="0me-kt-qUq"/>
+                        <constraint firstItem="Eo0-BR-Pj4" firstAttribute="leading" secondItem="Saa-WP-fwB" secondAttribute="leading" id="ObE-wT-GC0"/>
+                        <constraint firstItem="Eo0-BR-Pj4" firstAttribute="top" secondItem="Saa-WP-fwB" secondAttribute="top" id="cjI-Qu-Lgp"/>
+                        <constraint firstAttribute="trailing" secondItem="Eo0-BR-Pj4" secondAttribute="trailing" id="lUp-rC-AcO"/>
+                        <constraint firstAttribute="bottom" secondItem="Eo0-BR-Pj4" secondAttribute="bottom" id="v4H-Wu-E3M"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aKb-wA-aop" userLabel="View 2">
+                    <rect key="frame" x="10" y="140" width="580" height="1"/>
+                    <color key="backgroundColor" red="0.86274509799999999" green="0.87058823529999996" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="PNC-8b-BJI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Saa-WP-fwB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="QsM-RW-d5t"/>
+                <constraint firstItem="aKb-wA-aop" firstAttribute="top" secondItem="Saa-WP-fwB" secondAttribute="bottom" constant="-10" id="TXt-YI-jYh"/>
+                <constraint firstItem="Saa-WP-fwB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hT1-LK-bqx"/>
+                <constraint firstAttribute="trailing" secondItem="Saa-WP-fwB" secondAttribute="trailing" id="jLX-hD-Jsy"/>
+                <constraint firstAttribute="trailing" secondItem="aKb-wA-aop" secondAttribute="trailing" constant="10" id="kJr-Db-U9h"/>
+                <constraint firstItem="aKb-wA-aop" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="rYg-eD-E4J"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="headImageView" destination="FlN-mm-cbE" id="SA2-yY-q4d"/>
+            </connections>
+            <point key="canvasLocation" x="245" y="81.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_head" width="362" height="362"/>
+    </resources>
+</document>
