@@ -9,6 +9,7 @@
 #import "BussinessDetailViewController.h"
 #import "BusinessInfoTableViewCell.h"
 #import "FinderTableViewCell.h"
+#import "DIYFoodViewController.h"
 
 @interface BussinessDetailViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -117,6 +118,14 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row == 1) {
+        DIYFoodViewController *diyFoodVC = [self.storyboard instantiateViewControllerWithIdentifier:@"DIYFoodViewController"];
+        diyFoodVC.titleText = self.businessModel.businessName;
+         self.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:diyFoodVC animated:YES];
+         self.hidesBottomBarWhenPushed = NO;
+        
+    }
     if (indexPath.row == 2) {
         [UIView animateWithDuration:0.25 animations:^{
             self.payImageViewTopConstraint.constant = self.payImageView.frame.size.height;

@@ -135,6 +135,7 @@
 		A4AA94381FDC7F9E00392946 /* BusinessFoodDIYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AA94371FDC7F9E00392946 /* BusinessFoodDIYTableViewCell.m */; };
 		A4AA943B1FDC836800392946 /* FinderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AA943A1FDC836800392946 /* FinderTableViewCell.m */; };
 		A4AA943E1FDC920800392946 /* FoodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AA943D1FDC920800392946 /* FoodViewController.m */; };
+		A4DB55FB1FDCB0E200D8C9E8 /* DIYFoodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DB55FA1FDCB0E200D8C9E8 /* DIYFoodViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -367,6 +368,8 @@
 		A4AA943A1FDC836800392946 /* FinderTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FinderTableViewCell.m; sourceTree = "<group>"; };
 		A4AA943C1FDC920800392946 /* FoodViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoodViewController.h; sourceTree = "<group>"; };
 		A4AA943D1FDC920800392946 /* FoodViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoodViewController.m; sourceTree = "<group>"; };
+		A4DB55F91FDCB0E200D8C9E8 /* DIYFoodViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DIYFoodViewController.h; sourceTree = "<group>"; };
+		A4DB55FA1FDCB0E200D8C9E8 /* DIYFoodViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DIYFoodViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1030,6 +1033,8 @@
 				A4AA942E1FDC6B7900392946 /* BussinessDetailViewController.m */,
 				A4AA943C1FDC920800392946 /* FoodViewController.h */,
 				A4AA943D1FDC920800392946 /* FoodViewController.m */,
+				A4DB55F91FDCB0E200D8C9E8 /* DIYFoodViewController.h */,
+				A4DB55FA1FDCB0E200D8C9E8 /* DIYFoodViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1161,6 +1166,7 @@
 				4E8C812D1CDA224100F9F7D1 /* TuanGouViewController.m in Sources */,
 				4E8C80731CDA21FE00F9F7D1 /* MJRefreshAutoGifFooter.m in Sources */,
 				A4134BF91FDBD99A004947EA /* FriendUpTableViewCell.m in Sources */,
+				A4DB55FB1FDCB0E200D8C9E8 /* DIYFoodViewController.m in Sources */,
 				4E8C810D1CDA224100F9F7D1 /* MyNavController.m in Sources */,
 				4E8C81181CDA224100F9F7D1 /* PayDealTableViewCell.m in Sources */,
 				4E8C812C1CDA224100F9F7D1 /* MyMapNaviViewController.m in Sources */,

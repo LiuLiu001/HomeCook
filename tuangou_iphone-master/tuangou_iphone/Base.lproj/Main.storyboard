@@ -910,6 +910,72 @@
             </objects>
             <point key="canvasLocation" x="3649" y="-805"/>
         </scene>
+        <!--Food View Controller-->
+        <scene sceneID="0v3-mn-Gfx">
+            <objects>
+                <viewController storyboardIdentifier="DIYFoodViewController" id="QDL-GL-UKr" customClass="DIYFoodViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vjZ-no-dmH"/>
+                        <viewControllerLayoutGuide type="bottom" id="GsH-qP-W5O"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BLp-6j-dZl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D5U-iM-fYK" userLabel="Title View">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kHF-qs-fGS" userLabel="Back Button">
+                                        <rect key="frame" x="0.0" y="30" width="30" height="30.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="DoF-Ch-gGd"/>
+                                            <constraint firstAttribute="height" constant="30" id="Gfg-7T-xE2"/>
+                                        </constraints>
+                                        <state key="normal" image="icon_back"/>
+                                        <connections>
+                                            <action selector="backAction:" destination="QDL-GL-UKr" eventType="touchUpInside" id="nuN-Ei-wU3"/>
+                                            <action selector="bakButtonAction:" destination="uSL-mK-wfa" eventType="touchUpInside" id="smF-b1-6XY"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IU9-Uu-8l6">
+                                        <rect key="frame" x="166" y="35" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="IU9-Uu-8l6" firstAttribute="centerX" secondItem="D5U-iM-fYK" secondAttribute="centerX" id="060-ot-6mL"/>
+                                    <constraint firstAttribute="height" constant="64" id="E7v-TS-ltn"/>
+                                    <constraint firstItem="kHF-qs-fGS" firstAttribute="leading" secondItem="D5U-iM-fYK" secondAttribute="leading" id="YYj-E2-rrz"/>
+                                    <constraint firstItem="kHF-qs-fGS" firstAttribute="top" secondItem="D5U-iM-fYK" secondAttribute="top" constant="30" id="YqH-Gm-3uk"/>
+                                    <constraint firstItem="IU9-Uu-8l6" firstAttribute="centerY" secondItem="kHF-qs-fGS" secondAttribute="centerY" id="wF4-ZO-ggu"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic_diy" translatesAutoresizingMaskIntoConstraints="NO" id="bg7-dL-GdU">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bg7-dL-GdU" firstAttribute="top" secondItem="D5U-iM-fYK" secondAttribute="bottom" id="5o4-Qu-wGD"/>
+                            <constraint firstItem="bg7-dL-GdU" firstAttribute="leading" secondItem="BLp-6j-dZl" secondAttribute="leading" id="Fp2-pu-L2O"/>
+                            <constraint firstItem="D5U-iM-fYK" firstAttribute="top" secondItem="BLp-6j-dZl" secondAttribute="top" id="Glt-Qc-0ht"/>
+                            <constraint firstItem="GsH-qP-W5O" firstAttribute="top" secondItem="bg7-dL-GdU" secondAttribute="bottom" id="RNa-rE-g4d"/>
+                            <constraint firstAttribute="trailing" secondItem="bg7-dL-GdU" secondAttribute="trailing" id="YdK-Ui-fGI"/>
+                            <constraint firstAttribute="trailing" secondItem="D5U-iM-fYK" secondAttribute="trailing" id="evN-u4-bx6"/>
+                            <constraint firstItem="D5U-iM-fYK" firstAttribute="leading" secondItem="BLp-6j-dZl" secondAttribute="leading" id="kcZ-iA-fbb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="titleNameLabel" destination="IU9-Uu-8l6" id="SvO-BV-e2d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4dW-te-bmA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4374" y="-804"/>
+        </scene>
         <!--City Select View Controller-->
         <scene sceneID="hct-oj-ntN">
             <objects>
@@ -2896,6 +2962,7 @@
         <image name="icon_map_location" width="70" height="70"/>
         <image name="icon_map_refresh" width="70" height="70"/>
         <image name="icon_search" width="30" height="30"/>
+        <image name="pic_diy" width="414" height="664"/>
         <image name="pic_food_detail" width="414" height="736"/>
         <image name="pic_pay1" width="414" height="74"/>
         <image name="pic_user_center" width="414" height="664"/>
